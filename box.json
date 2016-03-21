@@ -1,0 +1,17 @@
+{
+    "chmod": "0755",
+    "files": [
+        "LICENSE"
+    ],
+    "finder": [
+        {
+            "name": ["*.php", "*.xsd", "LICENSE"],
+            "exclude": ["Tests", "tests", "sebastian", "phpunit", "phpspec", "process", "filesystem"],
+            "in": "vendor"
+        }
+    ],
+    "compactors": "Herrera\\Box\\Compactor\\Php",
+    "main": "bin/behat",
+    "output": "behat-drumkit.phar",
+    "stub": true
+}
